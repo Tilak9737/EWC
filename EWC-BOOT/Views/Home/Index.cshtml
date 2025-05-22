@@ -1,71 +1,148 @@
-﻿@{
-    ViewData["Title"] = "EWC 2025 Overview";
-}
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EWC 2025 Overview</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .ewc-gold {
+            color: #BFA24F;
+        }
 
-<div class="container mt-4">
-    <h2 class="mb-4">EWC 2025 Overview</h2>
+        .ewc-gold-border {
+            border-color: #BFA24F !important;
+        }
 
-    <div class="row text-center mb-4">
-        <div class="col-md-3 p-2">
-            <div class="p-3 border rounded bg-light">
-                <h5>Games</h5>
-                <h3 class="text-primary">15</h3>
+        .ewc-button {
+            transition: transform 0.2s ease-in-out;
+        }
+
+            .ewc-button:hover {
+                transform: scale(1.05);
+            }
+    </style>
+</head>
+<body class="bg-light text-dark">
+    <div class="container mt-5 pt-5">
+        <h2 class="mb-4 display-4 fw-bold ewc-gold">EWC 2025 Overview</h2>
+
+        <div class="row g-4 mb-5 text-center">
+            <div class="col-6 col-md-3">
+                <div class="p-4 bg-white rounded shadow ewc-gold-border">
+                    <h6 class="text-muted">Games</h6>
+                    <h3 class="fw-bold ewc-gold">15</h3>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="p-4 bg-white rounded shadow ewc-gold-border">
+                    <h6 class="text-muted">Teams</h6>
+                    <h3 class="fw-bold text-success">48</h3>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="p-4 bg-white rounded shadow ewc-gold-border">
+                    <h6 class="text-muted">Days Left</h6>
+                    <h3 class="fw-bold text-warning">127</h3>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="p-4 bg-white rounded shadow ewc-gold-border">
+                    <h6 class="text-muted">Prize Pool</h6>
+                    <h3 class="fw-bold text-danger">$15M</h3>
+                </div>
             </div>
         </div>
-        <div class="col-md-3 p-2">
-            <div class="p-3 border rounded bg-light">
-                <h5>Teams</h5>
-                <h3 class="text-success">48</h3>
+
+        <div class="row g-4 mb-5">
+            <div class="col-lg-8">
+                <div class="card shadow h-100 bg-white border-0">
+                    <div class="card-header bg-white border-bottom ewc-gold-border">
+                        <h5 class="mb-0 ewc-gold">Latest News</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="mb-4 ps-3 border-start border-4 ewc-gold-border">
+                            <h6 class="fw-semibold mb-1 text-dark">Valorant Format Announced</h6>
+                            <p class="text-muted small mb-1">Posted 2 days ago</p>
+                            <p class="text-dark">Group stage begins July 12th at Dubai Arena.</p>
+                            <a href="#" class="small text-decoration-none ewc-gold">Read more →</a>
+                        </div>
+                        <div class="ps-3 border-start border-4" style="border-color: #4CAF50;">
+                            <h6 class="fw-semibold mb-1 text-dark">Early Bird Tickets Sold Out</h6>
+                            <p class="text-muted small mb-1">Posted 1 week ago</p>
+                            <p class="text-dark">Regular tickets now available online.</p>
+                            <a href="#" class="small text-decoration-none text-success">Read more →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="card shadow h-100 bg-white border-0">
+                    <div class="card-header bg-white border-bottom ewc-gold-border">
+                        <h5 class="mb-0 ewc-gold">Quick Actions</h5>
+                    </div>
+                    <div class="card-body d-flex flex-column gap-4">
+                        <a href="#" class="btn btn-warning btn-lg ewc-button">View Schedule</a>
+                        <a href="#" class="btn btn-success btn-lg ewc-button">Register Team</a>
+                        <a href="#" class="btn btn-danger btn-lg ewc-button">Buy Tickets</a>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="col-md-3 p-2">
-            <div class="p-3 border rounded bg-light">
-                <h5>Days Left</h5>
-                <h3 class="text-warning">127</h3>
+
+        <div class="card mb-5 shadow bg-white border-0">
+            <div class="card-header bg-white border-bottom ewc-gold-border">
+                <h5 class="mb-0 ewc-gold">Featured Games</h5>
+            </div>
+            <div class="card-body">
+                <div class="row row-cols-2 row-cols-md-4 g-3 text-center">
+                    <div class="col"><div class="p-3 bg-white rounded ewc-gold-border text-dark">Valorant</div></div>
+                    <div class="col"><div class="p-3 bg-white rounded ewc-gold-border text-dark">Fatal Fury</div></div>
+                    <div class="col"><div class="p-3 bg-white rounded ewc-gold-border text-dark">Crossfire</div></div>
+                    <div class="col"><div class="p-3 bg-white rounded ewc-gold-border text-dark">Dota 2</div></div>
+                </div>
             </div>
         </div>
-        <div class="col-md-3 p-2">
-            <div class="p-3 border rounded bg-light">
-                <h5>Prize Pool</h5>
-                <h3 class="text-danger">$15M</h3>
+
+        <div class="row g-4">
+            <div class="col-md-6">
+                <div class="card shadow h-100 bg-white border-0">
+                    <div class="card-header bg-white border-bottom ewc-gold-border">
+                        <h5 class="mb-0 ewc-gold">Club Championship Standings</h5>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-group list-group-flush bg-white">
+                            <li class="list-group-item d-flex justify-content-between align-items-center bg-white text-dark">
+                                Team Falcons <span class="badge rounded-pill bg-warning text-dark">5,665 pts</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center bg-white text-dark">
+                                Team Liquid <span class="badge rounded-pill bg-success text-white">2,545 pts</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center bg-white text-dark">
+                                Team BDS <span class="badge rounded-pill bg-secondary text-white">2,000 pts</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6  mb-md-5">
+                <div class="card shadow h-100 bg-white border-0">
+                    <div class="card-header bg-white border-bottom ewc-gold-border">
+                        <h5 class="mb-0 ewc-gold">Upcoming Matches</h5>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-group list-group-flush bg-white ">
+                            <li class="list-group-item bg-white text-dark"><strong>July 10:</strong> Valorant Group Stage - Dubai Arena</li>
+                            <li class="list-group-item bg-white text-dark"><strong>July 12:</strong> Dota 2 Quarterfinals - Dubai Arena</li>
+                            <li class="list-group-item bg-white text-dark"><strong>July 15:</strong> LoL Semifinals - Dubai Arena</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-
-    <div class="row">
-        <div class="col-md-8">
-            <div class="card mb-4">
-                <div class="card-header bg-light">
-                    <h5 class="mb-0">Latest News</h5>
-                </div>
-                <div class="card-body">
-                    <div class="mb-3">
-                        <h6>Valorant Format Announced</h6>
-                        <p class="small text-muted">Posted 2 days ago</p>
-                        <p class="mb-2">Group stage begins July 12th at Dubai Arena.</p>
-                        <a href="#" class="small">Read more</a>
-                    </div>
-                    <div class="mb-3">
-                        <h6>Early Bird Tickets Sold Out</h6>
-                        <p class="small text-muted">Posted 1 week ago</p>
-                        <p class="mb-2">Regular tickets now available online.</p>
-                        <a href="#" class="small">Read more</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-md-4">
-            <div class="card mb-4">
-                <div class="card-header bg-light">
-                    <h5 class="mb-0">Quick Actions</h5>
-                </div>
-                <div class="card-body">
-                    <a href="#" class="d-block btn btn-primary mb-2">View Schedule</a>
-                    <a href="#" class="d-block btn btn-success mb-2">Register Team</a>
-                    <a href="#" class="d-block btn btn-warning mb-2">Buy Tickets</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
